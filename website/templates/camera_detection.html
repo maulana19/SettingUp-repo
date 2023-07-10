@@ -1,0 +1,35 @@
+{% extends "base.html" %} 
+{% block title %}{{ ttl }} {% endblock %} 
+{% block content %}
+
+<center>
+    <div style="height:60px;padding-top: 15px;background-color: dodgerblue;color: white;">
+        <h3><b>Indikasi Resiko</b></h3>
+    </div>
+    <div style="width: 100%;padding-left:3px;padding-right:3px;padding-top:3px">
+        <img src="{{ url_for('views.video') }}"  class="card-img-top" alt="...">
+    </div>
+</center>
+<div class="row">
+    <center>
+        <table style="width: 95%;margin-top: 190px; position:fixed;">
+            <tr>
+                <td>
+                    <center>
+                        <a href="/ambil-foto">
+                            <button style="width: 245px; padding-top: 10px; padding-bottom: 10px;padding-left:8px" class="btn btn-primary btn-md"><b>Ambil Gambar</b></button>
+                        </a>
+                        </center>
+                </td>
+                <td>
+                    <center>
+                        <a href="/">
+                            <button style="width: 245px; padding-top: 10px; padding-bottom: 10px;" class="btn btn-primary btn-md"><b>Kembali</b></button>
+                        </a>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+</div>
+{%endblock%}

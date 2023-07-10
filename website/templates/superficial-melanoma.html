@@ -1,0 +1,44 @@
+{% extends "base.html" %} 
+{% block title %}{{ ttl }} {% endblock %} 
+{% block content %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="/information" class="nav-link " id="home"><b><i style="color: whitesmoke;margin-left:15px" class="fa-solid fa-arrow-left"></i></b></a>
+        </li>
+    </ul>
+</nav>
+<br>
+<div class="row ms-4 me-4 mt-1">
+    <div class="col-sm-12 mb-3 mb-sm-0">
+        <h3><strong>Superficial Melanoma</strong></h3>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <center>
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="{{url_for('static', filename='superficial1.jpg')}}" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{{url_for('static', filename='superficial2.jpg')}}" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{{url_for('static', filename='superficial3.jpg')}}" alt="">
+                          </div>
+                        </div>
+                      </div>
+                </center>
+                <br>
+                <p style="text-align: justify;">
+                    &nbsp Superficial Spreading Melanoma (SMM) merupakan kelainan yang sering terjadi pada orang berkulit putih yaitu sekitar 70% dari semua melanoma kulit. Kelainan berupa bercak dengan ukuran beberapa milimeter sampai beberapa cm dengan warna bervariasi (waxy, kehitaman, kecoklatan, putih, biru), tidak teratur, berbatas tegas tetapi tidak halus atau irregular dengan sedikit penonjolan di permukaan kulit. Dengan menggunakan aturan ABCDE, melanoma jenis ini memiliki gambaran klinis paling klasik yaitu batas tidak teratur dan pigmentasi tidak teratur, tetapi mungkin muncul secara halus sebagai area fokus diskret hiperpigmentasi dalam nevus yang sudah ada sebelumnya. Nevus adalah bercak warna pada permukaan kulit, contohnya adalah tahi lalat. SMM adalah subtipe melanoma yang sering dikaitkan dengan nevi yang sudah ada, bisa jadi nevi perlahan-lahan berubah selama berbulan-bulan hingga bertahun-tahun, kondisi ini dapat menunjukkan ada yang salah jika terjadi pada nevus atipikal.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

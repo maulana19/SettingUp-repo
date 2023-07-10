@@ -1,0 +1,44 @@
+{% extends "base.html" %} 
+{% block title %}{{ ttl }} {% endblock %} 
+{% block content %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="/information" class="nav-link " id="home"><b><i style="color: whitesmoke;margin-left:15px" class="fa-solid fa-arrow-left"></i></b></a>
+        </li>
+    </ul>
+</nav>
+<br>
+<div class="row ms-4 me-4 mt-1">
+    <div class="col-sm-12 mb-3 mb-sm-0">
+        <h3><strong>Lentigo Maligna Melanoma</strong></h3>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <center>
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="{{url_for('static', filename='lentigo1.jpg')}}" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{{url_for('static', filename='lentigo2.jpg')}}" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{{url_for('static', filename='lentigo3.jpg')}}" alt="">
+                          </div>
+                        </div>
+                      </div>
+                </center>
+                <br>
+                <p style="text-align: justify;">
+                    &nbsp Lentigo maligna adalah melanoma in situ (melanoma tingkat 0) dengan fase pertumbuhan yang Panjang yang akhirnya menjadi invasif dan disebut sebagai Lentigo Maligna Melanoma (LMM). Tingkat keseringterjadian LMM adalah 10-15% seluruh melanoma kulit. Bagian yang paling sering adalah di wajah yang terpapar sinar matahari secara kronis, di pipi dan hidung khususnya; leher, kulit kepala, dan telinga pada pria. Penampilan klinis pada awal adalah makula awalnya datar, yang secara perlahan membesar, berwarna cokelat, seperti bintik-bintik (n) dengan bentuk tidak teratur dan corak cokelat dan kecokelatan yang bervariasi, biasanya timbul dengan latar belakang kerusakan karena paparan sinar matahari. Sering kali kedua LM dan LMM memiliki batas yang tidak jelas secara klinis, yang mungkin dikaburkan oleh latar belakang kerusakan aktinik yang terdiri dari lentigo, keratosis aktinik berpigmen, atau ephelida kelainan berupa bentuk yang berbatas tegas, berwarna coklat kehitaman serta tidak homogen, bentuk tidak teratur, dan pada bagian tertentu dapat tumbuh nodul yang berbatas tegas setelah bertahun-tahun. LM dan LMM dikaitkan dengan tingkat pertumbuhan lateral subklinis yang luas secara signifikan lebih tinggi, menghasilkan tingkat kekambuhan yang lebih tinggi dengan margin standar yang direkomendasikan dan kegagalan untuk memotong lesi sepenuhnya dan memiliki hubungan yang paling tidak umum dengan nevi, pada 3% kasus.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

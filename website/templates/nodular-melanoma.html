@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+{% block title %}{{ ttl }} {% endblock %} 
+{% block content %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="/information" class="nav-link " id="home"><b><i style="color: whitesmoke;margin-left:15px" class="fa-solid fa-arrow-left"></i></b></a>
+        </li>
+    </ul>
+</nav>
+<br>
+<div class="row ms-4 me-4 mt-1">
+    <div class="col-sm-12 mb-3 mb-sm-0">
+        <h3><strong>Nodular Melanoma</strong></h3>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <center>
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="{{url_for('static', filename='nodular1.jpg')}}" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{{url_for('static', filename='nodular1.jpg')}}" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{{url_for('static', filename='nodular1.jpg')}}" alt="">
+                          </div>
+                        </div>
+                      </div>
+                </center>
+                <br>
+                <p style="text-align: justify;">
+                    &nbsp Nodular Melanoma (NM) merupakan subtipe melanoma yang paling sering terjadi kedua setelah SMM, sekitar 15% hingga 30% dari semua melanoma. NM memiliki beberapa ciri khas, yaitu :
+                </p>
+                <ol type="a" class="ms-2">
+                    <li>NM luar biasa berevolusi dengan cepat, sering kali muncul dalam beberapa minggu hingga bulan.</li>
+                    <li>Lokasi paling sering muncul pada batang tubuh.</li>
+                    <li>lebih sering tidak memiliki fase pertumbuhan radial yang jelas.</li>
+                    <li>NM lebih sering terjadi de novo (mutasi germline baru yang tidak diwarisi dari kedua orang tua) daripada muncul pada nevus yang sudah ada sebelumnya.</li>
+                    <li>NM biasanya muncul sebagai lesi timbul biru tua-kehitaman atau merah kebiruan yang seragam, tetapi 5% di antaranya amelanotik.</li>
+                </ol>
+                <p style="text-align: justify;">
+                    Lesi awal nodular melanoma seringkali kurang asimetri, memiliki batas teratur, dan warna seragam. NM yang berpigmen memiliki ciri berupa nodul berwarna biru kehitaman dengan batas tegas serta mempunyai variasi bentuk yaitu bentuk dengan permukaan licin pada lapisan epidermis, nodus yang menonjol dengan bentuk tidak teratur pada permukaan kulit, dan bentuk eksofitik dengan ulserasi. SSM dan NM memiliki tingkat mutasi tertinggi pada gen BRAF, hingga 56% dari melanoma mempunyai perubahan ini.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

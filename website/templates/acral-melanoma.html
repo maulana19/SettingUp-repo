@@ -1,0 +1,58 @@
+{% extends "base.html" %} 
+{% block title %}{{ ttl }} {% endblock %} 
+{% block content %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="/information" class="nav-link " id="home"><b><i style="color: whitesmoke;margin-left:15px" class="fa-solid fa-arrow-left"></i></b></a>
+        </li>
+    </ul>
+</nav>
+<br>
+<div class="row ms-4 me-4 mt-1">
+    <div class="col-sm-12 mb-3 mb-sm-0">
+        <h3><strong>Acral Lentiginous Melanoma</strong></h3>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <center>
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="{{url_for('static', filename='acral1.jpg')}}" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{{url_for('static', filename='acral2.jpg')}}" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{{url_for('static', filename='acral3.jpg')}}" alt="">
+                          </div>
+                        </div>
+                      </div>
+                </center>
+                <br>
+                <p style="text-align: justify;">
+                    &nbsp Acral Lentiginous Melanoma (ALM) merupakan jenis kanker kulit yang jarang terjadi dan bentuk kelainan dapat berbeda sesuai dengan lokasi melanoma, biasanya pada telapak tangan, kaki, hingga kuku (Goydos & Shoen, 2016). ALM hanya 2% hingga 8% dari melanoma pada orang kulit putih tetapi merupakan bentuk yang paling umum pada individu berpigmen gelap (60%-72% pada Afrika Amerika dan 29% hingga 46% pada orang Asia). ALM lebih sering terdiagnosis pada populasi yang lebih tua, dengan usia rata-rata onset 65 tahun dan paling umum terjadi pada bagian telapak kaki, yang diikuti dengan telapak tangan dan subungual (bagian bawah kuku). ALM tidak dianggap terkait dengan paparan sinar matahari. Karakteristik melanoma lentiginosa akral meliputi:
+                </p>
+                <ol type="a" class="ms-2">
+                    <li>Ukuran besar: >6 mm dan seringkali berdiameter beberapa sentimeter atau lebih saat didiagnosis.</li>
+                    <li>Pigmentasi variabel: paling sering campuran warna coklat, dan biru-abu-abu, hitam dan merah.</li>
+                    <li>Permukaan halus pada awalnya, kemudian menjadi lebih tebal dengan permukaan tidak beraturan yang mungkin kering atau berkutil.</li>
+                    <li>Ulserasi atau perdarahan.</li>
+                </ol>
+                <p style="text-align: justify;">
+                    &nbsp Varian ALM subungual atau bawah kuku biasanya terjadi pada ibu jari atau jempol kaki, memiliki karakteristik, yaitu :
+                </p>
+                <ol type="a" class="ms-2">
+                    <li>Tampak sebagai perubahan warna coklat menjadi hitam atau pertumbuhan pada bantalan kuku.</li>
+                    <li>Garis kuku longitudinal yang melebar, gelap, atau berpigmen tidak teratur (melanonychia striata) dengan atau tanpa distrofi kuku dan elevasi lempeng kuku dapat terlihat.</li>
+                    <li>Tanda Hutchinson, ditemukannya pigmentasi pada lipatan kuku bagian proksimal, dapat ditemukan dengan melanoma subungual.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

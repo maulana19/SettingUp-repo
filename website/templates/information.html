@@ -1,0 +1,78 @@
+{% extends "base.html" %} 
+{% block title %}{{ ttl }} {% endblock %} 
+{% block content %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="/" class="nav-link " id="home"><b><i style="color: whitesmoke;margin-left:15px" class="fa-solid fa-arrow-left"></i></b></a>
+        </li>
+    </ul>
+</nav>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" style="background-color: white;color:black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <b>
+                    Tipe Kanker Kulit
+                </b>
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                
+                <div class="list-group list-group-flush">
+                    <a href="/superficial-melanoma" class="list-group-item list-group-item-action">Superficial Spreading Melanoma</a>
+                    <a href="/nodular-melanoma" class="list-group-item list-group-item-action">Nodular Melanoma</a>
+                    <a href="/lentigo-melanoma" class="list-group-item list-group-item-action">Lentigo Melanoma</a>
+                    <a href="/acral-melanoma" class="list-group-item list-group-item-action">Acral Lentiginous Melanoma</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <a href="/faktor-terkena-melanoma" style="text-decoration: none">
+                <button class="accordion-button" type="button" style="background-color: white;color:black">
+                    <b>
+                        Faktor yang Dapat Menyebabkan Terkena Kanker Melanoma
+                    </b>
+                </button>
+            </a>
+        </h2>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" style="background-color: white;color:black" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <b>
+                    Salah Satu Cara Mengetahui Kanker Melanoma dengan Tahi Lalat Biasa
+                </b>
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                    <div class="list-group list-group-flush">
+                        <button type="button" class="list-group-item list-group-item-action" aria-current="true">
+                            <b> Asymmetry (Asimetri)</b> <br> &nbsp Tahi lalat memiliki bentuk asimetri sedangkan melanoma tidak.
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <b> Border (Tepi)</b> <br> &nbsp Tahi lalat memiliki tepi beraturan sedangkan memiliki tepi yang tidak beraturan..
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <b> Color (Warna)</b> <br> &nbsp Tahi lalat berwarna hitam sedangkan melanoma memiliki warna yang beragam.
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <b> Diameter (Diameter)</b> <br> &nbsp Diameter tahi lalat yang lebih besar dari ukuran kacang polong ( >5mm ).
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <b> Evolution (Evolusi)</b> <br> &nbsp Jika tahi lalat biasa mengalami perubahan bentuk maka bisa menjurus pada melanoma.
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}
